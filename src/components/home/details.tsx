@@ -1,5 +1,5 @@
 import cover from "../../assets/images/cover.svg";
-import profile_image from "../../assets/images/oval.svg";
+import profile_image from "../../assets/images/profile.svg";
 
 const Details = () => {
   return (

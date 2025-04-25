@@ -2,11 +2,14 @@ import teams from "../../assets/images/teams.svg";
 import bookmark from "../../assets/images/bookmark.svg";
 import clock from "../../assets/images/clock.svg";
 import pin from "../../assets/images/pin.svg"
+
 interface JobCardProps {
   prompted?: boolean;
 }
 
 const JobCard: React.FC<JobCardProps> = ({ prompted }) => {
+  
+
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-4 flex flex-col justify-between space-y-2 w-full">
       {prompted && (
@@ -39,7 +42,7 @@ const JobCard: React.FC<JobCardProps> = ({ prompted }) => {
         <button className="bg-primary text-white text-xs rounded-lg px-4 py-2 w-full">
           Apply Now
         </button>
-        <button className="ml-2">
+        <button className="ml-2" >
           <img src={bookmark} loading="lazy" alt="bookmark" className="w-5 h-5 object-contain" />
         </button>
       </div>

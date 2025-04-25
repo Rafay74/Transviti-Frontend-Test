@@ -1,3 +1,4 @@
+import { FEATURED_JOBS } from './index';
 import teams from "../assets/images/teams.svg"
 
 export const NAVBAR_ITEMS = [
@@ -16,54 +17,16 @@ export const STATS_ITEMS = [
   { label: "My Jobs", value: 88 },
 ]
 
-export const FEATURED_JOBS = [
-  {
-    promoted: true,
-    title: "UI/UX Designer",
-    company: "Teams",
-    location: "Seattle, USA (Remote)",
-    date: "1 day ago",
-    applicants: 22,
-    logo: teams,
-  },
-  {
-    promoted: true,
-    title: "UI/UX Designer",
-    company: "Teams",
-    location: "Seattle, USA (Remote)",
-    date: "1 day ago",
-    applicants: 22,
-    logo: teams,
-  },
-  {
-    promoted: true,
-    title: "UI/UX Designer",
-    company: "Teams",
-    location: "Seattle, USA (Remote)",
-    date: "1 day ago",
-    applicants: 22,
-    logo: teams,
-  },
-  {
-    promoted: true,
-    title: "UI/UX Designer",
-    company: "Teams",
-    location: "Seattle, USA (Remote)",
-    date: "1 day ago",
-    applicants: 22,
-    logo: teams,
-  },
-  {
-    promoted: true,
-    title: "UI/UX Designer",
-    company: "Teams",
-    location: "Seattle, USA (Remote)",
-    date: "1 day ago",
-    applicants: 22,
-    logo: teams,
-  },
- 
-];
+
+export const FEATURED_JOBS = new Array(10).fill({
+  promoted: true,
+  title: "UI/UX Designer",
+  company: "Teams",
+  location: "Seattle, USA (Remote)",
+  date: "1 day ago",
+  applicants: 22,
+  logo: teams,
+},)
 
 export const RECOMMENDED_JOBS = new Array(10).fill({
   promoted: false,

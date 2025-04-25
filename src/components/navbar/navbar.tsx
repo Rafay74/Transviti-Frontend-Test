@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.svg";
 import search from "../../assets/images/search.svg";
 import avatar from "../../assets/images/avatar.svg";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
@@ -29,10 +29,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        
         <div className="flex items-center gap-2 sm:gap-3 md:gap-4 space-y-0">
-
-      
           <div className="relative w-28 sm:w-40 md:w-48 lg:w-64 rounded-[8px] overflow-hidden">
             <span className="absolute inset-y-0 left-3 flex items-center">
               <img
@@ -51,10 +48,8 @@ const Navbar = () => {
           </div>
 
           <button className="bg-primary px-2.5 py-1.5 text-white rounded-lg text-xs sm:px-4 sm:py-2 sm:text-base text-sm">
-  Resume Builder
-</button>
-
-          
+            Resume Builder
+          </button>
 
           <img
             src={avatar}
